@@ -23,8 +23,8 @@ const selectMena = document.getElementById("mena");
 const zmenaSkratkyMeny = document.getElementById("zmena_skratky_meny");
 const sumaPoZmene = document.getElementById("suma_po_zmene");
 
-var spolu = (cena * kusy).toFixed(2);
-var cenaDph = (spolu * 1.2).toFixed(2);
+let spolu = (cena * kusy).toFixed(2);
+let cenaDph = (spolu * 1.2).toFixed(2);
 
 iMeno.innerHTML = meno;
 iAdresa.innerHTML = adresa;
@@ -40,9 +40,9 @@ function vypsat(data){
 }
 
 function prepocetMeny(){
-    var aktualneZvolenaMena = selectMena.value;
-    var aktualnyKurz = kurz.kurzy[aktualneZvolenaMena].dev_stred;
-    var zmenenaSuma = (cenaDph / aktualnyKurz).toFixed(2);
+    let aktualneZvolenaMena = selectMena.value;
+    let aktualnyKurz = kurz.kurzy[aktualneZvolenaMena].dev_stred;
+    let zmenenaSuma = (cenaDph / aktualnyKurz).toFixed(2);
     zmenaSkratkyMeny.innerHTML = aktualneZvolenaMena;
     sumaPoZmene.innerHTML = zmenenaSuma;
 }
