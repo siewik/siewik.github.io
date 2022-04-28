@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sk">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,72 +10,70 @@
 <body>
     
     <div class="main rekap_padding">
-        <div class="rekap">
-            <h2>Rekapitulácia</h2>
-            <ul>
-                <li>
-                    Meno a priezvisko: <span id="i_meno"></span>
-                </li>
-                <li>
-                    Adresa: <span id="i_adresa"></span>
-                </li>
-                <li>
-                    Telefónne číslo: <span id="i_cislo"></span>
-                </li>
-                <li>
-                    E-mail: <span id="i_mail"></span>
-                </li> 
-                <br>
-                <li>
-                    Produkt: <span id="i_produkt"></span> <span id="i_kusy"></span>
-                </li>
-                <li>
-                    Suma: <span id="i_cena"></span>
-                </li>
-                <li>
-                    Suma s DPH: <span id="i_cenadph"></span>
-                </li>
-            </ul>
-            <form>
-                <label for="mena">Prepočítaj do meny:</label>
-                <select id="mena" name="mena">
-                <option value="">mena</option>
-                <option value="AUD">AUD</option>
-                <option value="BRL">BRL</option>
-                <option value="GBP">GBP</option>
-                <option value="BGN">BGN</option>
-                <option value="CNY">CNY</option>
-                <option value="DKK">DKK</option>
-                <option value="EUR">EUR</option>
-                <option value="PHP">PHP</option>
-                <option value="HKD">HKD</option>
-                <option value="HRK">HRK</option>
-                <option value="INR">INR</option>
-                <option value="IDR">IDR</option>
-                <option value="ISK">ISK</option>
-                <option value="ILS">ILS</option>
-                <option value="JPY">JPY</option>
-                <option value="ZAR">ZAR</option>
-                <option value="KRW">KRW</option>
-                <option value="CAD">CAD</option>
-                <option value="HUF">HUF</option>
-                <option value="MYR">MYR</option>
-                <option value="MXN">MXN</option>
-                <option value="XDR">XDR</option>
-                <option value="NOK">NOK</option>
-                <option value="NZD">NZD</option>
-                <option value="PLN">PLN</option>
-                <option value="RON">RON</option>
-                <option value="SGD">SGD</option>
-                <option value="SEK">SEK</option>
-                <option value="CHF">CHF</option>
-                <option value="THB">THB</option>
-                <option value="TRY">TRY</option>
-                <option value="USD">USD</option>
-                </select>
-            </form>
-            <p>Prepočitaná suma s DPH: <span id="suma_po_zmene"></span> <span id="zmena_skratky_meny"></span></p>
-        </div>
+        <h2>Rekapitulácia</h2>
+        <ul>
+            <li>
+                Meno a priezvisko: <span id="i_meno"></span>
+            </li>
+            <li>
+                Adresa: <span id="i_adresa"></span>
+            </li>
+            <li>
+                Telefónne číslo: <span id="i_cislo"></span>
+            </li>
+            <li>
+                E-mail: <span id="i_mail"></span>
+            </li> 
+            <br>
+            <li>
+                Produkt: <span id="i_produkt"></span> <span id="i_kusy"></span>
+            </li>
+            <li>
+                Suma: <span id="i_cena"></span>
+            </li>
+            <li>
+                Suma s DPH: <span id="i_cenadph"></span>
+            </li>
+        </ul>
+        <form>
+            <label for="mena">Prepočítaj do meny:</label>
+            <select id="mena" name="mena">
+            <option value="">mena</option>
+            <option value="AUD">AUD</option>
+            <option value="BRL">BRL</option>
+            <option value="GBP">GBP</option>
+            <option value="BGN">BGN</option>
+            <option value="CNY">CNY</option>
+            <option value="DKK">DKK</option>
+            <option value="EUR">EUR</option>
+            <option value="PHP">PHP</option>
+            <option value="HKD">HKD</option>
+            <option value="HRK">HRK</option>
+            <option value="INR">INR</option>
+            <option value="IDR">IDR</option>
+            <option value="ISK">ISK</option>
+            <option value="ILS">ILS</option>
+            <option value="JPY">JPY</option>
+            <option value="ZAR">ZAR</option>
+            <option value="KRW">KRW</option>
+            <option value="CAD">CAD</option>
+            <option value="HUF">HUF</option>
+            <option value="MYR">MYR</option>
+            <option value="MXN">MXN</option>
+            <option value="XDR">XDR</option>
+            <option value="NOK">NOK</option>
+            <option value="NZD">NZD</option>
+            <option value="PLN">PLN</option>
+            <option value="RON">RON</option>
+            <option value="SGD">SGD</option>
+            <option value="SEK">SEK</option>
+            <option value="CHF">CHF</option>
+            <option value="THB">THB</option>
+            <option value="TRY">TRY</option>
+            <option value="USD">USD</option>
+            </select>
+        </form>
+        <p>Prepočitaná suma s DPH: <span id="suma_po_zmene"></span> <span id="zmena_skratky_meny"></span></p>
     </div>
 
 <script src="script/rekapitulacia.js"></script>
